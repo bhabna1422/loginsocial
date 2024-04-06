@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteBase /login_register/
+ErrorDocument 404 /404.php
+RewriteRule ^documentation/.*$ - [PT]
+
+RewriteRule ^(cgi-bin|css|images|js|documentation)$ $1/
+RewriteRule ^.+/(cgi-bin|css|images|js|documentation)/(.+)$ $1/$2
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L]
+
+##RewriteRule ^index\.php/?$ / [L,R=301,NC]
+

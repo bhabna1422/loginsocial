@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Advanced Security - PHP Register/Login System - Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Advanced Security - Login Register with Social Account using PHP&rdquo; Documentation by &ldquo;Subhashree Nanda&rdquo; v2.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">Advanced Security <br> PHP Register/Login System using PHP</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 24/09/2021<br>
+					By: Subhashree Nanda<br>
+					Email: <a href="mailto:contact@a2zwebhelp.com">contact@a2zwebhelp.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/a2zwebhelp">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#Introduction">Introduction</a></li>
+			<li><a href="#Folders">Folders and Files Structure</a></li>
+			<li><a href="#Install">How to Install</a></li>
+			<li><a href="#Register">Register with your email</a></li>
+			<li><a href="#Facebook">Integrate Facebook</a></li>
+			<li><a href="#Twitter">Integrate Twitter</a></li>
+			<li><a href="#Google">Integrate Google </a></li>
+			<li><a href="#Upload">Upload and Test </a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="Introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		<p>PHP Login/ Registration System is a complete login and registration system developed in PHP and MySQL which includes registration with Email id, Facebook, Twitter and Gmail. The registration and login form is designed in HTML5 and Bootstrap4 with jQuery validation. It is very easy to install and integrate with your existing project. </p>
+		<hr>
+
+		<h3 id="Folders"><strong>B) Folders and Files Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>Please download A2Z_Login_Register.zip file and unzip in your system. You will get "A2Z_Login_Register" folder which contains all files and folder required to run this program. You can see two folders in the root directory 1. database and 2. Login-register. Database folder contains the SQL file to create the register table. And register folder contains total 8 folders and 22 PHP files. </p> 
+
+		<img src="assets/images/folder.png" style="width:600px;"> 
+		
+<p><b>Facebook:</b> This folder contains all library file and setting files in PHP. No need to change any PHP library files, you need to change "settings.php" file which we will discuss later.</p>
+
+<p><b>google:</b> This folder contains Google login API file and setting file.</p>
+<p><b>instagram:</b> This folder also contains the API files and setting files.</p>
+<p><b>linkedin:</b> This folder contains library files and config file. </p>
+<p><b>pinterest:</b> This folder contain library file and setting file.</p>
+<p><b>twitter:</b> This folder contain library file and config file.</p> 
+<p>You need to run register.php or login.php</p>
+
+		
+
+		<hr>
+		
+		<h3 id="Install"><strong>C) How to Install</strong> - <a href="#toc">top</a></h3>
+		
+		<h4><b>Step-1: Create Database /Table</b></h4>
+		
+		<p>Before running the project you need to create the register table. If you have an existing database then imports "loginregister.sql" to your database. If you don’t have any database then creates a database and imports the files. </p>
+		
+		<img src="assets/images/import.png">
+		
+		<h4><b>Step-2: Change the connection file</b></h4>
+		<p>Now you need to change "connection.php" file with your values.  You need to change $username, $password and $dbname with your database name. </p>
+		<img src="assets/images/db.png">
+		
+		<h4><b>Step-3: Copy / Upload files to Server.</b></h4>
+		<p>Now upload all file to your server through any FTP program you use. Let’s assume your folder name is register.   To run the programs enter https://www.yourdomain.com/index.php in your browser.</p>
+		<img src="assets/images/index.png">
+		
+		<p>In this project you will get 3 different design template for login, register and forgot password. The new user can either register by filling up the registration form or by clicking on any social media icon. And if the user register before then he/ she can login by entering user name and password or clicking on the social media icon he had registered with. If the user regiser with email then confirmation email will go to user's email. Once the user click on activation email, the account will be activated. </p>
+		
+		<hr>
+		
+		<h3 id="Register"><strong>D) Register with your email</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This is the basic registration process of any registration form, enter Fast name, last name, email address, password and confirm the password to create a new account. Once the user enters all information the data will be stored in our database and activaion email will go to usders email. Once user activate the account by clicking on the link sent in the email, the user becomes a registered member. The password will be encrypted and store in the database. </p>
+		
+		<p>There are 3 different registration design available</p>
+		<img src="assets/images/register-3.png" style="width:800px;">
+		
+		
+		
+		<p>If the user enters correct email address and password then the system will take the user to user dashboard page. Here you can uplaod your profile picture and update user information. Please note: chnage password and edit profile information are editable other are for demo only.</p> 
+		<img src="assets/images/dashboard.png" style="width:800px;">
+		
+		<h3><strong>Forgot Password? </strong></h3>
+		<p>The system also provides forgot password facility, the user needs to enter the correct email address. If the email address match with our database then the system will send reset password link to the user's email address. Same as login and register you will get 3 design for fogot password.</p> 
+		<img src="assets/images/forgot.png" style="width:800px;">
+		<p>&nbsp;</p>
+		<h3><strong>Reset Password</strong></h3>
+		<img src="assets/images/reset.png" style="width:800px;">
+		
+		<hr>
+		
+		<h3 id="Facebook"><strong>E) Integrate Facebook</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To integrate Facebook login registration system you need Facebook <b>App Client Id, Client Secret, Client Token</b> and also you need to set <b>Redirect URL</b> which will return back to your system after getting authorization. Most important your server should be SSL enabled and the system should run on HTTPS. </p>
+		
+		<h3>How to generate Required Keys for Facebook:</h3>
+		<p>Go to <a href="https://developers.facebook.com/apps" target="_blank">Facebook Developer</a> (https://developers.facebook.com/apps) account and logged in with your Facebook user name and password, then create New App and fill up the form and register your website and click on "Create App ID".</p>
+		
+		<img src="assets/images/facebook1.png">
+		
+		<p>After you have created the App ID and entered your website’s URL it will generate the App ID , App Secret and Client Token.</p>
+		
+		<img src="assets/images/facebook2.png">
+		
+		<p>To get your Client Token go to settings (Left Panel)> Advanced, here you will get your Client Token</p>
+		
+		<img src="assets/images/facebook3.png">
+		
+		<p>Once this is done now set your redirect URL from left panel go to <b>Facebook Login > Settings</b></p>
+		<img src="assets/images/facebook4.png">
+		
+		<p>Once every thing is set, save the changes. <br/> Now open the folder you have downloaded, go to the Facebook folder and open <b>"settings.php"</b> file and replace the key values.</p>
+		<img src="assets/images/facebook5.png">
+		<p>Save the file, No need to do any other changes.  Now the system is ready to Login and Register through Facebook.</p>
+		
+		<hr>
+		
+		<h3 id="Twitter"><strong>F) Integrate Twitter</strong> - <a href="#toc">top</a></h3>
+		<p>Same as Facebook to integrate Twitter you need <b>Consumer Key</b> and <b>Consumer Secret</b>.</p>
+		
+		<h3><strong>How to generate Required Keys for Twitter:</strong></h3>
+		
+		<p>To generate the key you need to login to <a href="https://dev.twitter.com/">Twitter Developer</a> (https://dev.twitter.com/) account with your Twitter user name and password. After successfully logged in to Twitter Developer account click on create new App and fill up the required information. </p>
+		<img src="assets/images/twitter1.png">
+		
+		<p>After you fill up all information it will generate required keys.</p>
+		<img src="assets/images/twitter2.png">
+		
+		<p>Now open <b>config.php</b> file in twitter folder and change the keys and save the file. Now the system is ready to Login and Register through Twitter.</p>
+		<img src="assets/images/twitter3.png">
+		
+		
+		<hr>
+		
+		<h3 id="Google"><strong>G) Integrate Google</strong> - <a href="#toc">top</a></h3>
+		<p>Like other social media, we need we need Client id and Client secret from Google. It can be generated through your Gmail account login in details.</p>
+		
+		<h3><strong>How to generate Required Keys for Google:</strong></h3>
+		
+		<p>To generate keys for Google, please login to <a href="https://console.developers.google.com/" target="_blank">Google developer</a> account and create a new project. Enter required info to generate the keys. (https://console.developers.google.com/) Also, don't forget to enter your redirect URL.</p>
+		
+		<img src="assets/images/google1.png">
+		<p>Once you generate the keys please open settings.php in google folder and change the values.</p>
+		<img src="assets/images/google2.png">
+		
+		<hr>
+		<h3 id="Upload"><strong>H) SMTP Setup</strong> - <a href="#toc">top</a></h3>
+		<p>In the include folder you will get "mailconfig.php". This file is used to setup your mail settings. </p>
+		<img src="assets/images/mail_settings.png" style="width:600px;">
+		<hr>
+		<h3 id="Upload"><strong>H) Upload and Test</strong> - <a href="#toc">top</a></h3>
+		<p>Once you create all the required keys and update the related file now it’s time to upload all file to the web server and test our program. You can use any FTP program to upload your files to the server. Before starting the system or run register.php file please double check you did the following changes to the following files. </p>
+		
+		<ul>
+			<li><i>connection.php(includes folder):</i> <a href="#Install">Changed the values</a> with your database user and password.</li>
+			<li><i>settings.php</i> in Facebook folder.</li>
+			<li><i>config.php</i> in twitter folder.</li>
+			<li><i>settings.php</i> in google folder.</li>
+			<li><i>mailconfig.php</i> include folder.</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing the code. As I said at the beginning, I'd be glad to help you if you have any questions relating to this code. No guarantees, but I'll do my best to assist.</p> 
+		
+		<p class="append-bottom alt large"><strong>Subhashree Nanda</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
